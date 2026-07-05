@@ -1,0 +1,722 @@
+[
+  {
+    "id": "A01",
+    "primaryDimension": "操控欲",
+    "secondaryDimension": "施虐倾向",
+    "title": "裁决掌控者",
+    "rarity": "★★★★★",
+    "quote": "有的人渴望胜利，而你更希望决定谁能赢。"
+  },
+  {
+    "id": "A02",
+    "primaryDimension": "操控欲",
+    "secondaryDimension": "深层共情缺失",
+    "title": "冷局操盘者",
+    "rarity": "★★★★☆",
+    "quote": "情绪会影响判断，而你更习惯站在情绪之外。"
+  },
+  {
+    "id": "A03",
+    "primaryDimension": "操控欲",
+    "secondaryDimension": "复仇驱动力",
+    "title": "沉默执棋者",
+    "rarity": "★★★★★",
+    "quote": "真正的反击，从来不是愤怒，而是时机。"
+  },
+  {
+    "id": "A04",
+    "primaryDimension": "操控欲",
+    "secondaryDimension": "病态猜疑",
+    "title": "疑局控场者",
+    "rarity": "★★★★☆",
+    "quote": "你很少把信任交给别人，因为主动权握在自己手里才最安心。"
+  },
+  {
+    "id": "A05",
+    "primaryDimension": "操控欲",
+    "secondaryDimension": "权力渴求",
+    "title": "权局统御者",
+    "rarity": "★★★★★",
+    "quote": "比起遵守规则，你更在意谁拥有制定规则的资格。"
+  },
+  {
+    "id": "A06",
+    "primaryDimension": "操控欲",
+    "secondaryDimension": "人格伪装",
+    "title": "幕后布局者",
+    "rarity": "★★★★★",
+    "quote": "真正改变局势的人，往往不会站在聚光灯下。"
+  },
+  {
+    "id": "A07",
+    "primaryDimension": "操控欲",
+    "secondaryDimension": "高危冒险欲",
+    "title": "博弈破局者",
+    "rarity": "★★★★☆",
+    "quote": "风险从来不是阻碍，而是值得下注的机会。"
+  },
+  {
+    "id": "A08",
+    "primaryDimension": "操控欲",
+    "secondaryDimension": "极端利己性",
+    "title": "利益执局者",
+    "rarity": "★★★☆☆",
+    "quote": "当选择摆在面前时，你总会先思考怎样才能赢。"
+  },
+  {
+    "id": "A09",
+    "primaryDimension": "操控欲",
+    "secondaryDimension": "道德脱离",
+    "title": "越界掌局者",
+    "rarity": "★★★★☆",
+    "quote": "当规则妨碍目标时，你更愿意改变规则，而不是改变自己。"
+  },
+  {
+    "id": "B01",
+    "primaryDimension": "施虐倾向",
+    "secondaryDimension": "操控欲",
+    "title": "冷面裁决者",
+    "rarity": "★★★★★",
+    "quote": "真正令你着迷的，不是掌控，而是他人无法挣脱的结局。"
+  },
+  {
+    "id": "B02",
+    "primaryDimension": "施虐倾向",
+    "secondaryDimension": "深层共情缺失",
+    "title": "冷感旁观者",
+    "rarity": "★★★★★",
+    "quote": "情绪无法说服你，因为你更相信结果。"
+  },
+  {
+    "id": "B03",
+    "primaryDimension": "施虐倾向",
+    "secondaryDimension": "复仇驱动力",
+    "title": "终局清算者",
+    "rarity": "★★★★★",
+    "quote": "有些事情，不会因为时间过去就结束。"
+  },
+  {
+    "id": "B04",
+    "primaryDimension": "施虐倾向",
+    "secondaryDimension": "病态猜疑",
+    "title": "戒备审判者",
+    "rarity": "★★★★☆",
+    "quote": "你很少主动相信别人，因此也很少轻易原谅别人。"
+  },
+  {
+    "id": "B05",
+    "primaryDimension": "施虐倾向",
+    "secondaryDimension": "权力渴求",
+    "title": "支配裁定者",
+    "rarity": "★★★★★",
+    "quote": "力量最大的意义，不是拥有，而是支配。"
+  },
+  {
+    "id": "B06",
+    "primaryDimension": "施虐倾向",
+    "secondaryDimension": "人格伪装",
+    "title": "假面裁决者",
+    "rarity": "★★★★☆",
+    "quote": "微笑与锋利，从来都可以同时存在。"
+  },
+  {
+    "id": "B07",
+    "primaryDimension": "施虐倾向",
+    "secondaryDimension": "高危冒险欲",
+    "title": "危险猎逐者",
+    "rarity": "★★★★☆",
+    "quote": "危险并不会让你退缩，反而让你更加清醒。"
+  },
+  {
+    "id": "B08",
+    "primaryDimension": "施虐倾向",
+    "secondaryDimension": "极端利己性",
+    "title": "利益收割者",
+    "rarity": "★★★☆☆",
+    "quote": "你更习惯衡量得失，而不是在意过程是否温柔。"
+  },
+  {
+    "id": "B09",
+    "primaryDimension": "施虐倾向",
+    "secondaryDimension": "道德脱离",
+    "title": "越界执行者",
+    "rarity": "★★★★★",
+    "quote": "底线会改变，而目的很少改变。"
+  },
+  {
+    "id": "C01",
+    "primaryDimension": "深层共情缺失",
+    "secondaryDimension": "操控欲",
+    "title": "理性执局者",
+    "rarity": "★★★★★",
+    "quote": "情绪会左右很多人，而你更愿意相信判断。"
+  },
+  {
+    "id": "C02",
+    "primaryDimension": "深层共情缺失",
+    "secondaryDimension": "施虐倾向",
+    "title": "冷感审视者",
+    "rarity": "★★★★☆",
+    "quote": "你很少因为同情改变立场。"
+  },
+  {
+    "id": "C03",
+    "primaryDimension": "深层共情缺失",
+    "secondaryDimension": "复仇驱动力",
+    "title": "无声清算者",
+    "rarity": "★★★★★",
+    "quote": "你不会轻易原谅，但也不会轻易失控。"
+  },
+  {
+    "id": "C04",
+    "primaryDimension": "深层共情缺失",
+    "secondaryDimension": "病态猜疑",
+    "title": "疏离观察者",
+    "rarity": "★★★★☆",
+    "quote": "你习惯保持距离，因此也很少完全相信任何人。"
+  },
+  {
+    "id": "C05",
+    "primaryDimension": "深层共情缺失",
+    "secondaryDimension": "权力渴求",
+    "title": "秩序支配者",
+    "rarity": "★★★★★",
+    "quote": "你更相信秩序，而不是善意。"
+  },
+  {
+    "id": "C06",
+    "primaryDimension": "深层共情缺失",
+    "secondaryDimension": "人格伪装",
+    "title": "静默伪装者",
+    "rarity": "★★★★☆",
+    "quote": "真实想法并不需要让所有人知道。"
+  },
+  {
+    "id": "C07",
+    "primaryDimension": "深层共情缺失",
+    "secondaryDimension": "高危冒险欲",
+    "title": "冷锋试探者",
+    "rarity": "★★★★☆",
+    "quote": "越是不确定的局面，你越能保持冷静。"
+  },
+  {
+    "id": "C08",
+    "primaryDimension": "深层共情缺失",
+    "secondaryDimension": "极端利己性",
+    "title": "利益衡量者",
+    "rarity": "★★★☆☆",
+    "quote": "你的决定，更多来自权衡，而不是感受。"
+  },
+  {
+    "id": "C09",
+    "primaryDimension": "深层共情缺失",
+    "secondaryDimension": "道德脱离",
+    "title": "边界淡漠者",
+    "rarity": "★★★★★",
+    "quote": "规则并非绝对，情感也未必永远重要。"
+  },
+  {
+    "id": "D01",
+    "primaryDimension": "复仇驱动力",
+    "secondaryDimension": "操控欲",
+    "title": "隐局复盘者",
+    "rarity": "★★★★★",
+    "quote": "真正的反击，不需要急于一时。"
+  },
+  {
+    "id": "D02",
+    "primaryDimension": "复仇驱动力",
+    "secondaryDimension": "施虐倾向",
+    "title": "终局清算者",
+    "rarity": "★★★★★",
+    "quote": "有些结局，不是遗忘，而是等待。"
+  },
+  {
+    "id": "D03",
+    "primaryDimension": "复仇驱动力",
+    "secondaryDimension": "深层共情缺失",
+    "title": "冷面追偿者",
+    "rarity": "★★★★☆",
+    "quote": "你记住的，从来不是情绪，而是代价。"
+  },
+  {
+    "id": "D04",
+    "primaryDimension": "复仇驱动力",
+    "secondaryDimension": "病态猜疑",
+    "title": "疑影追猎者",
+    "rarity": "★★★★☆",
+    "quote": "一次背叛，足够让你重新定义信任。"
+  },
+  {
+    "id": "D05",
+    "primaryDimension": "复仇驱动力",
+    "secondaryDimension": "权力渴求",
+    "title": "权衡清算者",
+    "rarity": "★★★★★",
+    "quote": "真正的胜利，是站在更高的位置回望过去。"
+  },
+  {
+    "id": "D06",
+    "primaryDimension": "复仇驱动力",
+    "secondaryDimension": "人格伪装",
+    "title": "隐忍潜伏者",
+    "rarity": "★★★★★",
+    "quote": "沉默未必代表放下，也可能只是还没到时候。"
+  },
+  {
+    "id": "D07",
+    "primaryDimension": "复仇驱动力",
+    "secondaryDimension": "高危冒险欲",
+    "title": "孤注逆袭者",
+    "rarity": "★★★★☆",
+    "quote": "为了一个答案，你愿意赌上一切。"
+  },
+  {
+    "id": "D08",
+    "primaryDimension": "复仇驱动力",
+    "secondaryDimension": "极端利己性",
+    "title": "利益清偿者",
+    "rarity": "★★★☆☆",
+    "quote": "你很少相信命运，更相信得失终会算清。"
+  },
+  {
+    "id": "D09",
+    "primaryDimension": "复仇驱动力",
+    "secondaryDimension": "道德脱离",
+    "title": "越界复决者",
+    "rarity": "★★★★★",
+    "quote": "你在意的不是方式，而是结局是否公平。"
+  },
+  {
+    "id": "E01",
+    "primaryDimension": "病态猜疑",
+    "secondaryDimension": "操控欲",
+    "title": "戒备控局者",
+    "rarity": "★★★★★",
+    "quote": "你很少把主动权交给别人，因为信任本身就是一种风险。"
+  },
+  {
+    "id": "E02",
+    "primaryDimension": "病态猜疑",
+    "secondaryDimension": "施虐倾向",
+    "title": "疑影裁决者",
+    "rarity": "★★★★★",
+    "quote": "你不会轻易下结论，但一旦认定，就很难改变。"
+  },
+  {
+    "id": "E03",
+    "primaryDimension": "病态猜疑",
+    "secondaryDimension": "深层共情缺失",
+    "title": "疏离审视者",
+    "rarity": "★★★★☆",
+    "quote": "保持距离，是你确认安全感的一种方式。"
+  },
+  {
+    "id": "E04",
+    "primaryDimension": "病态猜疑",
+    "secondaryDimension": "复仇驱动力",
+    "title": "记忆追索者",
+    "rarity": "★★★★★",
+    "quote": "你不会忘记那些让你失望的人。"
+  },
+  {
+    "id": "E05",
+    "primaryDimension": "病态猜疑",
+    "secondaryDimension": "权力渴求",
+    "title": "戒备统御者",
+    "rarity": "★★★★☆",
+    "quote": "比起相信别人，你更愿意相信自己掌握的局面。"
+  },
+  {
+    "id": "E06",
+    "primaryDimension": "病态猜疑",
+    "secondaryDimension": "人格伪装",
+    "title": "假面窥局者",
+    "rarity": "★★★★★",
+    "quote": "你习惯先观察别人，再决定是否暴露自己。"
+  },
+  {
+    "id": "E07",
+    "primaryDimension": "病态猜疑",
+    "secondaryDimension": "高危冒险欲",
+    "title": "危局试探者",
+    "rarity": "★★★★☆",
+    "quote": "越是未知，你越想亲自确认答案。"
+  },
+  {
+    "id": "E08",
+    "primaryDimension": "病态猜疑",
+    "secondaryDimension": "极端利己性",
+    "title": "自保权衡者",
+    "rarity": "★★★☆☆",
+    "quote": "你首先考虑的，往往不是相信，而是保护自己。"
+  },
+  {
+    "id": "E09",
+    "primaryDimension": "病态猜疑",
+    "secondaryDimension": "道德脱离",
+    "title": "边界质疑者",
+    "rarity": "★★★★★",
+    "quote": "你更愿意相信自己的判断，而不是别人告诉你的规则。"
+  },
+  {
+    "id": "F01",
+    "primaryDimension": "权力渴求",
+    "secondaryDimension": "操控欲",
+    "title": "权局主导者",
+    "rarity": "★★★★★",
+    "quote": "你追逐的，从来不是控制，而是影响一切的能力。"
+  },
+  {
+    "id": "F02",
+    "primaryDimension": "权力渴求",
+    "secondaryDimension": "施虐倾向",
+    "title": "秩序裁定者",
+    "rarity": "★★★★★",
+    "quote": "力量最大的价值，在于决定规则如何生效。"
+  },
+  {
+    "id": "F03",
+    "primaryDimension": "权力渴求",
+    "secondaryDimension": "深层共情缺失",
+    "title": "理性统御者",
+    "rarity": "★★★★☆",
+    "quote": "情绪可以感染别人，却很少影响你的判断。"
+  },
+  {
+    "id": "F04",
+    "primaryDimension": "权力渴求",
+    "secondaryDimension": "复仇驱动力",
+    "title": "高位清算者",
+    "rarity": "★★★★★",
+    "quote": "你更希望在无人能够反驳的位置，完成最后的回答。"
+  },
+  {
+    "id": "F05",
+    "primaryDimension": "权力渴求",
+    "secondaryDimension": "病态猜疑",
+    "title": "戒备统治者",
+    "rarity": "★★★★☆",
+    "quote": "越是重要的位置，你越难轻易相信任何人。"
+  },
+  {
+    "id": "F06",
+    "primaryDimension": "权力渴求",
+    "secondaryDimension": "人格伪装",
+    "title": "隐权布局者",
+    "rarity": "★★★★★",
+    "quote": "真正的影响力，并不总需要被所有人看见。"
+  },
+  {
+    "id": "F07",
+    "primaryDimension": "权力渴求",
+    "secondaryDimension": "高危冒险欲",
+    "title": "孤注夺权者",
+    "rarity": "★★★★☆",
+    "quote": "为了更高的位置，你愿意承担更大的风险。"
+  },
+  {
+    "id": "F08",
+    "primaryDimension": "权力渴求",
+    "secondaryDimension": "极端利己性",
+    "title": "利益统筹者",
+    "rarity": "★★★☆☆",
+    "quote": "在你的世界里，资源永远比情绪更值得争取。"
+  },
+  {
+    "id": "F09",
+    "primaryDimension": "权力渴求",
+    "secondaryDimension": "道德脱离",
+    "title": "越界掌权者",
+    "rarity": "★★★★★",
+    "quote": "当目标足够重要时，你很少会被规则束缚。"
+  },
+  {
+    "id": "G01",
+    "primaryDimension": "人格伪装",
+    "secondaryDimension": "操控欲",
+    "title": "假面布局者",
+    "rarity": "★★★★★",
+    "quote": "真正的目的，不一定要让所有人知道。"
+  },
+  {
+    "id": "G02",
+    "primaryDimension": "人格伪装",
+    "secondaryDimension": "施虐倾向",
+    "title": "温和裁决者",
+    "rarity": "★★★★☆",
+    "quote": "你习惯把锋芒藏在平静之后。"
+  },
+  {
+    "id": "G03",
+    "primaryDimension": "人格伪装",
+    "secondaryDimension": "深层共情缺失",
+    "title": "静默伪饰者",
+    "rarity": "★★★★☆",
+    "quote": "你表达出来的，未必就是你真正感受到的。"
+  },
+  {
+    "id": "G04",
+    "primaryDimension": "人格伪装",
+    "secondaryDimension": "复仇驱动力",
+    "title": "隐忍潜伏者",
+    "rarity": "★★★★★",
+    "quote": "你不会轻易暴露情绪，因为你更相信时机。"
+  },
+  {
+    "id": "G05",
+    "primaryDimension": "人格伪装",
+    "secondaryDimension": "病态猜疑",
+    "title": "假面观局者",
+    "rarity": "★★★★★",
+    "quote": "你总会先看清别人，再决定让别人看见怎样的自己。"
+  },
+  {
+    "id": "G06",
+    "primaryDimension": "人格伪装",
+    "secondaryDimension": "权力渴求",
+    "title": "隐权经营者",
+    "rarity": "★★★★☆",
+    "quote": "你更愿意悄悄积累影响力，而不是急于证明自己。"
+  },
+  {
+    "id": "G07",
+    "primaryDimension": "人格伪装",
+    "secondaryDimension": "高危冒险欲",
+    "title": "险局潜行者",
+    "rarity": "★★★★☆",
+    "quote": "即使身处危险，你依然能够保持表面的平静。"
+  },
+  {
+    "id": "G08",
+    "primaryDimension": "人格伪装",
+    "secondaryDimension": "极端利己性",
+    "title": "利己伪饰者",
+    "rarity": "★★★☆☆",
+    "quote": "你擅长隐藏真实想法，也擅长保护自己的利益。"
+  },
+  {
+    "id": "G09",
+    "primaryDimension": "人格伪装",
+    "secondaryDimension": "道德脱离",
+    "title": "越界饰演者",
+    "rarity": "★★★★★",
+    "quote": "身份可以改变，立场也可以改变，只要目标没有改变。"
+  },
+  {
+    "id": "H01",
+    "primaryDimension": "高危冒险欲",
+    "secondaryDimension": "操控欲",
+    "title": "危局执棋者",
+    "rarity": "★★★★★",
+    "quote": "你相信，真正的机会，往往藏在风险之后。"
+  },
+  {
+    "id": "H02",
+    "primaryDimension": "高危冒险欲",
+    "secondaryDimension": "施虐倾向",
+    "title": "危险狩猎者",
+    "rarity": "★★★★★",
+    "quote": "你不会刻意寻找危险，却很少拒绝危险。"
+  },
+  {
+    "id": "H03",
+    "primaryDimension": "高危冒险欲",
+    "secondaryDimension": "深层共情缺失",
+    "title": "冷锋试局者",
+    "rarity": "★★★★☆",
+    "quote": "越是不确定的局面，你越容易保持清醒。"
+  },
+  {
+    "id": "H04",
+    "primaryDimension": "高危冒险欲",
+    "secondaryDimension": "复仇驱动力",
+    "title": "孤注逆行者",
+    "rarity": "★★★★★",
+    "quote": "你愿意承担代价，只为了走到那个结局。"
+  },
+  {
+    "id": "H05",
+    "primaryDimension": "高危冒险欲",
+    "secondaryDimension": "病态猜疑",
+    "title": "危局探路者",
+    "rarity": "★★★★☆",
+    "quote": "未知不会让你停下脚步，只会让你更加警惕。"
+  },
+  {
+    "id": "H06",
+    "primaryDimension": "高危冒险欲",
+    "secondaryDimension": "权力渴求",
+    "title": "夺局开拓者",
+    "rarity": "★★★★★",
+    "quote": "越是重要的位置，你越愿意亲自去争取。"
+  },
+  {
+    "id": "H07",
+    "primaryDimension": "高危冒险欲",
+    "secondaryDimension": "人格伪装",
+    "title": "潜行破局者",
+    "rarity": "★★★★☆",
+    "quote": "你总能把真正的勇气，藏在最平静的表情里。"
+  },
+  {
+    "id": "H08",
+    "primaryDimension": "高危冒险欲",
+    "secondaryDimension": "极端利己性",
+    "title": "利益冒险者",
+    "rarity": "★★★☆☆",
+    "quote": "只要值得，你愿意为了结果承担风险。"
+  },
+  {
+    "id": "H09",
+    "primaryDimension": "高危冒险欲",
+    "secondaryDimension": "道德脱离",
+    "title": "越界博弈者",
+    "rarity": "★★★★★",
+    "quote": "对你来说，风险与规则，都只是选择的一部分。"
+  },
+  {
+    "id": "I01",
+    "primaryDimension": "极端利己性",
+    "secondaryDimension": "操控欲",
+    "title": "利益掌控者",
+    "rarity": "★★★★☆",
+    "quote": "你很少做没有回报的选择。"
+  },
+  {
+    "id": "I02",
+    "primaryDimension": "极端利己性",
+    "secondaryDimension": "施虐倾向",
+    "title": "利益裁定者",
+    "rarity": "★★★★☆",
+    "quote": "在你的世界里，得失往往比对错更重要。"
+  },
+  {
+    "id": "I03",
+    "primaryDimension": "极端利己性",
+    "secondaryDimension": "深层共情缺失",
+    "title": "冷衡决策者",
+    "rarity": "★★★★☆",
+    "quote": "你习惯衡量价值，而不是依赖情绪。"
+  },
+  {
+    "id": "I04",
+    "primaryDimension": "极端利己性",
+    "secondaryDimension": "复仇驱动力",
+    "title": "利益追偿者",
+    "rarity": "★★★★☆",
+    "quote": "你相信，所有付出，都应该得到回应。"
+  },
+  {
+    "id": "I05",
+    "primaryDimension": "极端利己性",
+    "secondaryDimension": "病态猜疑",
+    "title": "自保权衡者",
+    "rarity": "★★★☆☆",
+    "quote": "你首先考虑的，往往是怎样让自己立于不败。"
+  },
+  {
+    "id": "I06",
+    "primaryDimension": "极端利己性",
+    "secondaryDimension": "权力渴求",
+    "title": "资源统筹者",
+    "rarity": "★★★★★",
+    "quote": "你更擅长经营资源，而不是依赖运气。"
+  },
+  {
+    "id": "I07",
+    "primaryDimension": "极端利己性",
+    "secondaryDimension": "人格伪装",
+    "title": "利益伪饰者",
+    "rarity": "★★★★☆",
+    "quote": "不是所有真心，都值得被轻易看见。"
+  },
+  {
+    "id": "I08",
+    "primaryDimension": "极端利己性",
+    "secondaryDimension": "高危冒险欲",
+    "title": "高赌获利者",
+    "rarity": "★★★★☆",
+    "quote": "只要回报足够诱人，你愿意承担相应的风险。"
+  },
+  {
+    "id": "I09",
+    "primaryDimension": "极端利己性",
+    "secondaryDimension": "道德脱离",
+    "title": "规则取舍者",
+    "rarity": "★★★★★",
+    "quote": "规则存在于多数人的世界，而你更在意结果属于谁。"
+  },
+  {
+    "id": "J01",
+    "primaryDimension": "道德脱离",
+    "secondaryDimension": "操控欲",
+    "title": "规则改写者",
+    "rarity": "★★★★★",
+    "quote": "当规则无法解决问题时，你更愿意重新定义规则。"
+  },
+  {
+    "id": "J02",
+    "primaryDimension": "道德脱离",
+    "secondaryDimension": "施虐倾向",
+    "title": "越界裁决者",
+    "rarity": "★★★★★",
+    "quote": "善恶有时只是立场，而不是答案。"
+  },
+  {
+    "id": "J03",
+    "primaryDimension": "道德脱离",
+    "secondaryDimension": "深层共情缺失",
+    "title": "边界旁观者",
+    "rarity": "★★★★☆",
+    "quote": "情感可以理解，却未必能够改变你的判断。"
+  },
+  {
+    "id": "J04",
+    "primaryDimension": "道德脱离",
+    "secondaryDimension": "复仇驱动力",
+    "title": "终局执行者",
+    "rarity": "★★★★★",
+    "quote": "你更相信结果，而不是过程是否体面。"
+  },
+  {
+    "id": "J05",
+    "primaryDimension": "道德脱离",
+    "secondaryDimension": "病态猜疑",
+    "title": "疑律破界者",
+    "rarity": "★★★★☆",
+    "quote": "你很少轻易接受规则，也很少轻易相信制定规则的人。"
+  },
+  {
+    "id": "J06",
+    "primaryDimension": "道德脱离",
+    "secondaryDimension": "权力渴求",
+    "title": "秩序重构者",
+    "rarity": "★★★★★",
+    "quote": "真正的权力，不只是遵守秩序，而是决定秩序。"
+  },
+  {
+    "id": "J07",
+    "primaryDimension": "道德脱离",
+    "secondaryDimension": "人格伪装",
+    "title": "假面越界者",
+    "rarity": "★★★★☆",
+    "quote": "你擅长隐藏真实立场，也不愿被任何标签束缚。"
+  },
+  {
+    "id": "J08",
+    "primaryDimension": "道德脱离",
+    "secondaryDimension": "高危冒险欲",
+    "title": "禁区探索者",
+    "rarity": "★★★★☆",
+    "quote": "别人止步的地方，往往正是你好奇的开始。"
+  },
+  {
+    "id": "J09",
+    "primaryDimension": "道德脱离",
+    "secondaryDimension": "极端利己性",
+    "title": "利益重构者",
+    "rarity": "★★★★★",
+    "quote": "你更相信选择本身，而不是选择是否被认可。"
+  }
+]
