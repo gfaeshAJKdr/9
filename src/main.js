@@ -1,6 +1,6 @@
-import { loadState, saveState, clearState } from "./services/storage.js";
-import { loadJson } from "./utils/data.js";
-import { calculateScores, pickPrimaryAndSecondary } from "./utils/score.js";
+import { loadState, saveState, clearState } from "services/storage.js";
+import { loadJson } from "utils/data.js";
+import { calculateScores, pickPrimaryAndSecondary } from "utils/score.js";
 
 const app = document.querySelector("#app");
 
