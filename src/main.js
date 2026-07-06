@@ -406,10 +406,10 @@ async function bootstrap() {
 
   try {
     const [config, dimensions, questions, personalities] = await Promise.all([
-      loadJson("/src/data/config.json"),
-      loadJson("/src/data/dimensions.json"),
-      loadJson("/src/data/questions.json"),
-      loadJson("/src/data/personalities.json")
+      loadJson("src/data/config.json"),
+      loadJson("src/data/dimensions.json"),
+      loadJson("src/data/questions.json"),
+      loadJson("src/data/personalities.json")
     ]);
 
     model.config = config;
