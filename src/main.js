@@ -1,5 +1,5 @@
 import { loadState, saveState, clearState } from "services/storage.js";
-import { loadJson } from "utils/data.js";
+import { loadJson } from "./src/utils/data.js";
 import { calculateScores, pickPrimaryAndSecondary } from "utils/score.js";
 
 const app = document.querySelector("#app");
@@ -406,10 +406,10 @@ async function bootstrap() {
 
   try {
     const [config, dimensions, questions, personalities] = await Promise.all([
-      loadJson("src/data/config.json"),
-      loadJson("src/data/dimensions.json"),
-      loadJson("src/data/questions.json"),
-      loadJson("src/data/personalities.json")
+      loadJson("/9/data/config.json"),
+      loadJson("/9/data/dimensions.json")
+      loadJson("/9/data/questions.json"),
+      loadJson("/9/data/personalities.json")
     ]);
 
     model.config = config;
