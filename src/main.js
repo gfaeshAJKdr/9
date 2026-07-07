@@ -54,7 +54,6 @@ function startTest({ reset = false } = {}) {
     model.currentIndex = 0;
     model.answers = {};
   }
-
   model.status = "test";
   persist();
   render();
@@ -71,7 +70,7 @@ function completeTest() {
     return;
   }
 
-  model.status = "locked";
+  model.status = "summary";
   persist();
   render();
 }
@@ -223,7 +222,7 @@ function renderTest() {
   `;
 }
 
-function renderLockedSummary() {
+function renderSummary() {
   const scores = calculateScores({
     questions: model.questions,
     answers: model.answers,
@@ -233,106 +232,35 @@ function renderLockedSummary() {
   const result = pickPrimaryAndSecondary(scores, model.dimensions);
   const personality = findPersonality(result.primary, result.secondary);
 
-  const title = personality?.title || "人格已生成";
+  const title = personality?.title || "人格画像";
   const rarity = personality?.rarity || "未知";
+  const quote = personality?.quote || "——";
+  const analysis = personality?.description || "暂无详细分析。"; 
 
   return `
     <main class="view summary">
-
       <section class="result-hero">
-      <div class="blur-mask">
         <p>${escapeHtml(result.primary)} × ${escapeHtml(result.secondary)}</p>
-        </div>
-        <h2>人格称号：</h2>
-        <h1><span class="blur-mask">${escapeHtml(title)}</span></h1>
-        <p>人格稀有度：？？？？？</p>
+        <h1>${escapeHtml(title)}</h1>
+        <p>人格稀有度：${escapeHtml(rarity)}</p>
+        <p style="margin-top: 10px; font-style: italic;">“${escapeHtml(quote)}”</p>
       </section>
 
       <section class="card">
-        <div style="filter: blur(8px); opacity: 0.6;">
-          ${renderSpiderChart(scores)}
-        </div>
+        ${renderSpiderChart(scores)}
       </section>
 
-      <h3>🖤核心分析：</h3>
-      <section class="blur-mask">
-        <div class="blur-box">你从不觉得这个世界上有什么无私的爱或纯粹的善意，别人对你好，
-        你脑子里都在冷静地揣测对方的真实目的。为了确保绝对的安全感，你习惯在自己和所有人之间筑起一道厚厚的高墙，
-        像个躲在暗处的观察者一样，毫无感情地审视着周围每个人的言行举止。你谁都不信，
-        这也让你在面对任何亲密关系时，都带着一种冷冰冰的防范。</div>
+      <h3>📝 人格深度分析：</h3>
+      <section class="card">
+        <p>${escapeHtml(analysis)}</p>
       </section>
 
-      <h3>💥暗黑场景激发：</h3>
-      <section class="blur-mask">
-        <div class="blur-box">一旦某段关系开始让你觉得“太近了”
-        或者对方试图向你索要完全的信任与情感回应时，你内心的警铃就会大作。
-        你不会去沟通你的焦虑，而是会瞬间切断所有的情感连接，
-        用一种毫无温度的冷水把对方狠狠泼醒。无论对方怎么委屈哭诉，你都能面无表情地看着，心里甚至还在冷静地盘算：
-        TA哭得这么真切，是不是为了博取同情，好继续套路我？
-</div>
-      </section>
-
-      <h3>💭善意提醒：</h3>
-      <section class="blur-mask">
-        <div class="blur-box">你这种极度的不信任和冷漠，最后防范的其实是你自己。因为你对任何温情都免疫，看谁都像贼，
-        导致那些真正带着真心想对你好的人，都会被你这种冷血逼得彻底心碎、主动离开。
-        学会把神经放轻松一点，适度允许别人靠近，你才能体会到生活真正的温度。</div>
-      </section>
-
-      <button class="button primary">
-        🔒 支付 ¥1.99 查看完整结果
+      <button class="button primary" data-action="restart" style="margin-top: 20px;">
+        重新测试
       </button>
-
-    <button class="button secondary" data-action="reset-home" style="margin-top: 20px;">
-        放弃结果，重回首页
+      <button class="button secondary" data-action="home" style="margin-top: 10px;">
+        返回首页
       </button>
-      </main>
-  `;
-}
-
-function renderSummary() {
-  const scores = calculateScores({ questions: model.questions, answers: model.answers, dimensions: model.dimensions });
-  const result = pickPrimaryAndSecondary(scores, model.dimensions);
-  const personality = findPersonality(result.primary, result.secondary);
-  const title = personality?.title || "人格画像已生成";
-  const rarity = personality?.rarity || "待补充";
-  const quote = personality?.quote || "你的完整人格报告已生成。";
-
-  return `
-    <main class="view summary">
-      <section class="result-hero blur-lock">
-        <p class="eyebrow">${escapeHtml(result.primary)} × ${escapeHtml(result.secondary)}</p>
-        <h1 class="title result-title">${escapeHtml(title)}</h1>
-        <p class="rarity"><p>人格稀有度：？？？？？</p></p>
-        <p class="quote">“${escapeHtml(quote)}”</p>
-      </section>
-      <section class="card summary-card chart-card pay-lock">
-
-    <div class="blur-mask">
-  ${renderSpiderChart(scores)}
-</div>
-
-    <div class="pay-mask">
-
-        <h3>🔒 支付 ¥1.99 查看完整人格报告</h3>
-
-        <p>你的完整暗黑人格画像已生成，支付后立即解锁全部分析。</p>
-
-        <button class="button primary">
-
-            支付 ¥1.99
-
-        </button>
-
-    </div>
-
-</section>
-      <section class="card summary-card">
-        <p class="summary-text">🎭 你的完整人格报告已生成。</p>
-        <p class="disclaimer">${escapeHtml(model.config.disclaimer)}</p>
-      </section>
-      <button class="button" data-action="restart">重新测试</button>
-      <button class="button secondary" data-action="home">返回首页</button>
     </main>
   `;
 }
@@ -340,7 +268,10 @@ function renderSummary() {
 function renderError(message) {
   return `
     <main class="view app-shell">
-      <section class="error-box">${escapeHtml(message)}</section>
+      <section class="card" style="text-align: center; margin-top: 50px;">
+        <h2 style="color: #ff4d4f;">⚠️ 访问受限</h2>
+        <p style="margin-top: 15px;">${escapeHtml(message)}</p>
+      </section>
     </main>
   `;
 }
@@ -350,11 +281,7 @@ function render() {
 
   if (model.status === "test") {
     content = renderTest();
-  } 
-  else if (model.status === "locked") {
-    content = renderLockedSummary();
-}
-  else if (model.status === "summary") {
+  } else if (model.status === "summary") {
     content = renderSummary();
   } else {
     content = renderHome();
@@ -367,50 +294,56 @@ function bindEvents() {
   app.addEventListener("click", (event) => {
     const target = event.target.closest("[data-action]");
 
-    if (!target) {
-      return;
-    }
+    if (!target) return;
 
     const action = target.dataset.action;
 
     if (action === "start") {
       startTest();
     }
-
     if (action === "restart") {
       clearState();
       startTest({ reset: true });
     }
-
-    if (action === "home") {
+    if (action === "home" || action === "reset-home") {
+      clearState(); 
       goHome();
     }
-
     if (action === "select") {
       selectOption(target.dataset.questionId, target.dataset.optionKey);
     }
-
     if (action === "previous") {
       goPrevious();
     }
-    if (action === "reset-home") {
-        clearState(); 
-        model.status = "home"; 
-        render();           
-      }
-    
   });
 }
 
 async function bootstrap() {
+  // ==========================================
+  // 48 小时自动过期逻辑 (基于浏览器缓存)
+  // ==========================================
+  const duration = 48 * 60 * 60 * 1000;
+  let firstOpenTime = localStorage.getItem("my_link_open_time");
+
+  if (!firstOpenTime) {
+    firstOpenTime = Date.now();
+    localStorage.setItem("my_link_open_time", firstOpenTime);
+  }
+
+  if (Date.now() - firstOpenTime > duration) {
+    app.innerHTML = renderError("此专属链接已失效（超过 48 小时有效期限）。如需继续测试，请重新获取链接。");
+    return; 
+  }
+  // ==========================================
+
   bindEvents();
 
   try {
     const [config, dimensions, questions, personalities] = await Promise.all([
-      loadJson("/9/data/config.json"),
-      loadJson("/9/data/dimensions.json"),
-      loadJson("/9/data/questions.json"),
-      loadJson("/9/data/personalities.json")
+      loadJson("./src/data/config.json"),
+      loadJson("./src/data/dimensions.json"),
+      loadJson("./src/data/questions.json"),
+      loadJson("./src/data/personalities.json")
     ]);
 
     model.config = config;
@@ -420,27 +353,20 @@ async function bootstrap() {
 
     const saved = loadState();
 
-if (saved) {
-  model.currentIndex = Math.min(Math.max(Number(saved.currentIndex) || 0, 0), questions.length - 1);
-  model.answers = saved.answers && typeof saved.answers === "object" ? saved.answers : {};
+    if (saved) {
+      model.currentIndex = Math.min(Math.max(Number(saved.currentIndex) || 0, 0), questions.length - 1);
+      model.answers = saved.answers && typeof saved.answers === "object" ? saved.answers : {};
 
-  // ✔ 允许恢复 test（继续答题）
-  if (saved.status === "test") {
-    model.status = "test";
-  }
-
-  // ✔ 已完成测试 → 可以恢复 locked（但不会自动跳）
-  else if (saved.status === "locked" || saved.status === "summary") {
-    model.status = saved.status;
-  }
-
-  // ✔ 其他情况回 home
-  else {
-    model.status = "home";
-  }
-} else {
-  model.status = "home";
-}
+      if (saved.status === "test") {
+        model.status = "test";
+      } else if (saved.status === "summary") {
+        model.status = "summary";
+      } else {
+        model.status = "home";
+      }
+    } else {
+      model.status = "home";
+    }
 
     render();
   } catch (error) {
